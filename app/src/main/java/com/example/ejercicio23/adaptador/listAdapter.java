@@ -30,8 +30,8 @@ public class listAdapter extends ArrayAdapter<Fotografía> {
 
         Fotografía foto = getItem(position);
 
-        ImageView img = convertView.findViewById(R.id.imgFoto);
-        TextView desc = convertView.findViewById(R.id.txtDescripcion);
+        ImageView img = convertView.findViewById(R.id.imageView);
+        TextView desc = convertView.findViewById(R.id.textView);
 
 
             Bitmap bitmap = BitmapFactory.decodeByteArray(foto.getImage(), 0, foto.getImage().length);
